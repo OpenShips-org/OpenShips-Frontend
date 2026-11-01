@@ -35,7 +35,8 @@ export function useTrackMapLayers({
     const { data: vesselData } = useVesselData(
         isMapLoaded,
         bounds ?? EMPTY_BOUNDS,
-        []
+        [],
+        zoom ?? 0
     );
 
     const { data: trackData } = useVesselTrackData(
