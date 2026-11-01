@@ -1,21 +1,8 @@
-# Next.js template
+# OpenShips (Website)
 
-This is a Next.js template with shadcn/ui.
+OpenShips is a project that serves as an open source alternative to AIS-tracking platforms like [VesselFinder](https://www.vesselfinder.com) and [MarineTraffic](https://www.marinetraffic.com). It provides real-time tracking of ships around the world, allowing users to monitor maritime traffic and access information about vessels, their locations, and movements.
 
-## Adding components
+The project is currently in active development, but we are hoping to build a community around it and make it a useful tool for anyone interested in maritime traffic.
 
-To add components to your app, run the following command:
+You can view the progress of the project on the [website](https://openships.de) and the GitHub repositories pinned below.
 
-```bash
-npx shadcn@latest add button
-```
-
-This will place the ui components in the `components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
-```

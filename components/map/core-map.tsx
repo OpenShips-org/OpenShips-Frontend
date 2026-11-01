@@ -6,7 +6,7 @@ import type { DeckProps } from "@deck.gl/core";
 import { Map } from "react-map-gl/maplibre";
 import { forwardRef, useRef, useCallback } from "react";
 import type { ReactNode, ComponentProps, RefObject } from "react";
-import { mapStyles } from "@/lib/map-styles";
+import { mapStyles } from "@/config/map-styles";
 import { DeckGLOverlay } from "@/lib/deckgl-utils";
 import { setWorkerUrl } from "maplibre-gl";
 import "maplibre-theme/icons.default.css";

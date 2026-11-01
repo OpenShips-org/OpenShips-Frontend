@@ -10,13 +10,16 @@
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "predev": "node ./scripts/copy-maplibre-worker.mjs && node scripts/generate-runtime-config.mjs",
-    "prebuild": "node ./scripts/copy-maplibre-worker.mjs"
+    "styles:previews": "node scripts/generate-style-previews.mjs",
+    "predev": "node ./scripts/copy-maplibre-worker.mjs && node scripts/generate-runtime-config.mjs && npm run styles:previews",
+    "prebuild": "node ./scripts/copy-maplibre-worker.mjs && npm run styles:previews"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
     "@next/env": "^16.3.6",
     "@tanstack/react-query": "^5.102.8",
+    "@versatiles/style": "^7.1.0",
+    "@versatiles/svg-renderer": "^2.4.2",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.2.6",
     "deck.gl": "^9.4.0",

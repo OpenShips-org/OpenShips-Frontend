@@ -16,7 +16,6 @@ import { sharpTextFontSettings } from "@/config/text-settings";
 import { VesselTrackResponse } from "@/models/vessel-track-response";
 
 const vesselIconCache = new Map<string, string>();
-const showVesselTimestamps = false;
 
 function getCachedVesselIcon(
     vesselType: number,
@@ -44,7 +43,8 @@ const isStationary = (d: VesselPositionResponse) =>
 
 export function useVesselLayers(
     data: ApiResponse<VesselPositionResponse[]> | null,
-    mapTheme: "light" | "dark"
+    mapTheme: "light" | "dark",
+    showVesselTimestamps: boolean = false
 ) {
     const [now, setNow] = useState(0);
 
@@ -200,6 +200,10 @@ export function useVesselLayers(
                 getAlignmentBaseline: "bottom",
                 getPixelOffset: [0, -20],
                 fontSettings: sharpTextFontSettings,
+
+                updateTriggers: {
+                    getColor: [mapTheme],
+                },
             }),
         ];
 
@@ -220,7 +224,7 @@ export function useVesselLayers(
                               new Date(d.eventTimestamp).toLocaleTimeString()
                             : "",
                     getSize: 10,
-                    getColor: [255, 0, 0],
+                    getColor: [0, 0, 0],
                     getAngle: 0,
                     getAlignmentBaseline: "top",
                     getPixelOffset: [0, 20],

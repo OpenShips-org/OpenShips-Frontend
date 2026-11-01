@@ -1,6 +1,6 @@
 import { MapGLStyleSwitcher } from "map-gl-style-switcher/react-map-gl";
 import { ScaleControl, NavigationControl } from "react-map-gl/maplibre";
-import { mapStyles } from "@/lib/map-styles";
+import { mapStyles } from "@/config/map-styles";
 
 type Props = {
     mapStyle: string;

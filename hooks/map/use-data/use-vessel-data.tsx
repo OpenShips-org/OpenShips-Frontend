@@ -8,7 +8,8 @@ import type { VesselDetailResponse } from "@/models/vessel-detail-response";
 export function useVesselData(
     enabled: boolean,
     bounds: { minLat: number; minLng: number; maxLat: number; maxLng: number },
-    typeFilter: number[]
+    typeFilter: number[],
+    zoom: number
 ) {
     return useQuery<ApiResponse<VesselPositionResponse[]>>({
         queryKey: ["vesselData", bounds, typeFilter],
@@ -60,8 +61,8 @@ export function useVesselTrackData(
             const params = new URLSearchParams({
                 from: startTime.toISOString(),
                 to: endTime.toISOString(),
-                limit: "1000",
-                minIntervalSeconds: "60",
+                limit: "5000",
+                minIntervalSeconds: "180",
             });
 
             const res = await fetch(

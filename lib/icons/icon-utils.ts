@@ -8,7 +8,9 @@ export function colorForVesselType(type: number | null): string {
     if (type == 31 || type == 32) return "#9752ec"; // towing
     if (type == 35) return "#224119"; // military ops
     if (type == 36) return "#3ef5f5"; // sailing
-    if (type >= 40 && type <= 49) return "#d62480"; // high speed craft
+    if (type >= 40 && type <= 49) return "#a91d65"; // high speed craft
+    if (type == 52) return "#2e748b"; // tug
+    if (type == 55) return "#e01b1b"; // law enforcement
     if (type >= 60 && type <= 69) return "#5fc94f"; // passenger
     if (type >= 70 && type <= 79) return "#e3a92d"; // cargo
     if (type >= 80 && type <= 89) return "#426ff5"; // tanker

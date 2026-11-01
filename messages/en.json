@@ -23,7 +23,8 @@
         "AISDataLicense": "AIS data license",
         "Timestamp": "Timestamp",
         "NoVesselPhoto": "No vessel photo available",
-        "ViewTrack": "View Track"
+        "ViewTrack": "View Track",
+        "ViewDetails": "View Details"
     },
     "Port": {
       "Name": "Name",

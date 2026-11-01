@@ -23,7 +23,8 @@
         "AISDataLicense": "AIS-Datenlizenz",
         "Timestamp": "Zeitstempel",
         "NoVesselPhoto": "Kein Schiffsfoto verfügbar",
-        "ViewTrack": "Historie anzeigen"
+        "ViewTrack": "Historie anzeigen",
+        "ViewDetails": "Details anzeigen"
     },
     "Port": {
       "Name": "Name",

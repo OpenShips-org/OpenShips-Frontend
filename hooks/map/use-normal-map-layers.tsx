@@ -24,7 +24,8 @@ export function useNormalMapLayers({
     const { data: vesselData } = useVesselData(
         isMapLoaded,
         bounds ?? EMPTY_BOUNDS,
-        []
+        [],
+        zoom ?? 0
     );
 
     const { data: portData } = usePortData(

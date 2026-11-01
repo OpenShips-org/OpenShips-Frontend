@@ -1,21 +1,25 @@
 "use client";
 
 import MainMap from "@/components/map/main-map";
+import TimeControl from "@/components/map/time-control";
 import "map-gl-style-switcher/dist/map-gl-style-switcher.css";
 import { useState } from "react";
 import { useParams } from "next/navigation";
 
 export default function Page() {
-
     const { mmsi } = useParams<{ mmsi: string }>();
 
-    const factor = 60 * 60 * 1000; // 1 hour in milliseconds
+    const hour = 60 * 60 * 1000;
 
-    const [from] = useState(
-        () => new Date(Date.now() - factor * 24 * 7) // 7 days ago
+    const [from, setFrom] = useState(
+        () => new Date(Date.now() - hour * 24 * 7)
     );
 
-    const [now] = useState(() => new Date());
+    const [to, setTo] = useState(() => new Date());
+
+    // Erlaubter Gesamtzeitraum des Sliders
+    const minTime = new Date(Date.now() - hour * 24 * 7); // 30 Tage
+    const maxTime = new Date();
 
     return (
         <div className="h-dvh">
@@ -24,8 +28,22 @@ export default function Page() {
                     type: "track",
                     mmsi: Number(mmsi),
                     from,
-                    to: now,
+                    to,
                 }}
+                mapChildren={
+                    <>
+                        <TimeControl
+                            minTime={minTime}
+                            maxTime={maxTime}
+                            from={from}
+                            to={to}
+                            onRangeChange={({ from, to }) => {
+                                setFrom(from);
+                                setTo(to);
+                            }}
+                        />
+                    </>
+                }
             />
         </div>
     );

@@ -80,7 +80,7 @@ export default function SelectedVesselTooltip({
                         </DrawerHeader>
 
                         <div className="px-4 pb-6">
-                            <VesselImage vessel={normal.selectedVessel} t={tMap} />
+                            <VesselImage vesselMmsi={normal.selectedVessel?.mmsi} t={tMap} />
 
                             <VesselDetails
                                 normal={normal}
@@ -115,7 +115,7 @@ export default function SelectedVesselTooltip({
                 <hr className="mx-2" />
 
                 {/* Bild */}
-                <VesselImage vessel={normal.selectedVessel} t={tMap} />
+                <VesselImage vesselMmsi={normal.selectedVessel} t={tMap} />
 
                 <VesselDetails
                     normal={normal}

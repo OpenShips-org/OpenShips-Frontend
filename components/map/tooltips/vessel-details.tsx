@@ -196,12 +196,18 @@ export default function VesselDetails({
 
             <hr className="mx-2 my-1" />
 
-            <div className="flex">
+            <div className="flex flex-row items-center justify-center gap-10">
                 <Link
                     href={`/track/${normal.selectedVessel.mmsi}`}
-                    className="mx-auto p-4 m-2 bg-primary rounded-lg min-w-40 text-center text-white"
+                    className="p-4 m-2 bg-primary rounded-lg text-center text-white"
                 >
                     {tMap("General.ViewTrack")}
+                </Link>
+                <Link
+                    href={`/vessel/${normal.selectedVessel.mmsi}`}
+                    className="p-4 m-2 bg-primary rounded-lg text-center text-white"
+                >
+                    {tMap("General.ViewDetails")}
                 </Link>
             </div>
         </div>

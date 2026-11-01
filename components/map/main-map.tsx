@@ -1,6 +1,6 @@
 "use client";
 
-import { mapStyles } from "@/lib/map-styles";
+import { mapStyles } from "@/config/map-styles";
 import { useCallback, useEffect, useRef, useState } from "react";
 import CoreMap, { CoreMapRef } from "@/components/map/core-map";
 import { useTheme } from "next-themes";
@@ -18,17 +18,20 @@ import { AttributionControl } from "react-map-gl/maplibre";
 import { usePrimaryInput } from "@/hooks/useIsTouchDevice";
 import { useSettings } from "@/lib/settings";
 import type { ViewStateChangeEvent } from "react-map-gl/maplibre";
+import type { ReactNode } from "react";
 
 interface MainMapProps {
     mode: MapMode;
-}
+    children?: ReactNode;
+    mapChildren?: ReactNode;
+};
 
 type TooltipState = {
     x: number;
     y: number;
 } | null;
 
-export default function MainMap({ mode }: MainMapProps) {
+export default function MainMap({ mode, children, mapChildren }: MainMapProps) {
     const locale = useLocale();
 
     const [mounted, setMounted] = useState(false);
@@ -154,6 +157,8 @@ export default function MainMap({ mode }: MainMapProps) {
                               : undefined,
                 }}
             >
+                {mapChildren}
+
                 <AttributionControl
                     compact
                     customAttribution={[
@@ -187,6 +192,8 @@ export default function MainMap({ mode }: MainMapProps) {
                     resolvedTheme={resolvedTheme}
                 />
             </CoreMap>
+
+            {children}
 
             {mounted && activeLayers?.selectedVessel && (
                 <SelectedVesselTooltip

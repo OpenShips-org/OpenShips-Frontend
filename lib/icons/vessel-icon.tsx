@@ -12,28 +12,30 @@ export function GenerateVesselIcon(
         navigationStatus === NavigationStatus.Moored
     ) {
         return `
-    <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="200"
-            height="200"
-            viewBox="0 0 200 200"
-        >
-            <circle
-                cx="100"
-                cy="100"
-                r="55"
-                fill="${color}"
-                stroke="#000000"
-                stroke-width="6"
-            />
-        </svg>
-    `;
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="200"
+                height="200"
+                viewBox="0 0 200 200"
+            >
+                <circle
+                    cx="100"
+                    cy="100"
+                    r="55"
+                    fill="${color}"
+                    stroke="#000000"
+                    stroke-width="6"
+                />
+            </svg>
+        `;
     }
 
     return `
         <svg
-            viewBox="0 0 447.342 447.342"
             xmlns="http://www.w3.org/2000/svg"
+            width="200"
+            height="200"
+            viewBox="0 0 447.342 447.342"
             fill="${color}"
             stroke="#000"
             stroke-width="10"
