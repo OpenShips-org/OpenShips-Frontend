@@ -16,23 +16,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Resolve tile server via Google DNS
-        id: dns
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y dnsutils
-
-          IP=$(dig @8.8.8.8 +short A tiles.openships.de | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$' | head -n1)
-
-          if [ -z "$IP" ]; then
-            echo "Failed to resolve tiles.openships.de via Google DNS"
-            exit 1
-          fi
-
-          echo "Resolved tiles.openships.de to $IP"
-          echo "ip=$IP" >> "$GITHUB_OUTPUT"
-
       - name: Login to GHCR
         uses: docker/login-action@v3
         with:
@@ -46,8 +29,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          add-hosts: |
-            tiles.openships.de:${{ steps.dns.outputs.ip }}
           tags: |
             ghcr.io/alexius25/openships-frontend:latest
             ghcr.io/alexius25/openships-frontend:${{ github.sha }}
