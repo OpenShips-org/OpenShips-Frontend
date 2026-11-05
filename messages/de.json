@@ -96,5 +96,81 @@
     "Map": "Karte",
     "Vessels": "Schiffe",
     "Ports": "Häfen"
+  },
+  "SeaportsPage": {
+    "eyebrow": "Open-Data-Initiative",
+    "hero": {
+      "title": "Häfen verbinden.",
+      "titleAccent": "Die Welt kartieren.",
+      "description": "Eine Open-Source-Sammlung von Seehäfen aus aller Welt. Strukturierte maritime Daten, geografische Informationen und Identifikatoren – für jeden frei zugänglich.",
+      "github": "Auf GitHub entdecken",
+      "explore": "Datensatz entdecken"
+    },
+    "overview": {
+      "label": "Datensatz im Überblick",
+      "title": "Eine globale Perspektive auf die maritime Infrastruktur.",
+      "description": "SeaPorts bietet eine strukturierte Sammlung von Seehäfen weltweit und vereint grundlegende Hafeninformationen mit geografischen Daten. Entwickelt für die Logistik, die Forschung und alle, die mit maritimen Informationen arbeiten.",
+      "link": "Repository ansehen",
+      "features": {
+        "global": {
+          "title": "Globale Abdeckung",
+          "description": "Eine Sammlung von Seehäfen aus aller Welt."
+        },
+        "location": {
+          "title": "Geografische Daten",
+          "description": "Präzise Koordinaten für Breiten- und Längengrad."
+        },
+        "codes": {
+          "title": "UN/LOCODE",
+          "description": "Standardisierte Kennungen für Transportstandorte."
+        },
+        "boundaries": {
+          "title": "Hafengrenzen",
+          "description": "Geografische Polygon-Daten für unterstützte Häfen."
+        }
+      }
+    },
+    "coverage": {
+      "label": "Geografische Abdeckung",
+      "title": "Von lokalen Küsten bis zu einem globalen Netzwerk.",
+      "description": "Der Datensatz enthält weltweit Hafennamen, Identifikatoren und geografische Koordinaten. Detaillierte geografische Grenzen sind derzeit für Häfen in Norddeutschland verfügbar. Eine schrittweise Erweiterung ist geplant.",
+      "highlight": "Norddeutschland",
+      "highlightDescription": "Derzeit verfügbare geografische Grenzdaten"
+    },
+    "structure": {
+      "label": "Datenstruktur",
+      "title": "Strukturiert. Zugänglich. Offen.",
+      "description": "Jeder Hafen enthält eine Reihe geografischer und identifizierender Attribute.",
+      "schema": "Attribute der Hafendaten",
+      "note": "Geografische Grenzen sind noch nicht für alle Häfen verfügbar."
+    },
+    "status": {
+      "label": "Entwicklungsstand",
+      "title": "Ein Datensatz in ständiger Entwicklung.",
+      "current": {
+        "title": "Kontinuierliche Weiterentwicklung",
+        "description": "SeaPorts ist ein fortlaufendes Projekt. Hafennamen, UN/LOCODEs und geografische Koordinaten sind für Häfen weltweit verfügbar. Geografische Grenzen sind derzeit ausschließlich für Norddeutschland definiert."
+      },
+      "disclaimer": {
+        "title": "Datengenauigkeit",
+        "description": "Der Datensatz wird ohne Gewähr bereitgestellt. Die geografischen Grenzen sind Näherungswerte und entsprechen möglicherweise nicht den tatsächlichen Hafengebieten. Überprüfe alle Informationen, bevor du sie für kritische betriebliche oder navigatorische Entscheidungen verwendest."
+      }
+    },
+    "license": {
+      "label": "Open Source",
+      "title": "Offene Daten. Geteiltes Wissen.",
+      "description": "Der Datensatz wird unter der Creative-Commons-Lizenz Namensnennung 4.0 International (CC BY 4.0) veröffentlicht. Du darfst die Daten frei teilen und bearbeiten, sofern du die Quelle angibst und vorgenommene Änderungen kennzeichnest.",
+      "dataset": "Lizenz des Datensatzes",
+      "source": "Ursprüngliche Datenquelle",
+      "readMore": "Lizenz ansehen"
+    },
+    "cta": {
+      "title": "Entdecke die Seehäfen der Welt.",
+      "description": "Entdecke den Datensatz, sieh dir den Quellcode an und trage zu einem offenen maritimen Datenökosystem bei.",
+      "button": "Auf GitHub ansehen"
+    },
+    "footer": {
+      "description": "Offene maritime Daten für alle."
+    }
   }
 }

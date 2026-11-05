@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
+    "@icons-pack/react-simple-icons": "^13.15.1",
     "@next/env": "^16.3.6",
     "@tanstack/react-query": "^5.102.8",
     "@versatiles/style": "^7.1.0",

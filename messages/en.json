@@ -96,5 +96,81 @@
     "Map": "Map",
     "Vessels": "Vessels",
     "Ports": "Ports"
+  },
+  "SeaportsPage": {
+    "eyebrow": "Open data initiative",
+    "hero": {
+      "title": "Connecting ports.",
+      "titleAccent": "Mapping the world.",
+      "description": "An open-source collection of seaports around the world. Structured maritime data, geographic information and identifiers — accessible to everyone.",
+      "github": "Explore on GitHub",
+      "explore": "Discover the dataset"
+    },
+    "overview": {
+      "label": "Dataset overview",
+      "title": "A global perspective on maritime infrastructure.",
+      "description": "SeaPorts provides a structured collection of seaports worldwide, combining essential port information with geographic data. Built for logistics, research and anyone working with maritime information.",
+      "link": "View repository",
+      "features": {
+        "global": {
+          "title": "Global coverage",
+          "description": "A collection of seaports from around the world."
+        },
+        "location": {
+          "title": "Geographic data",
+          "description": "Precise latitude and longitude coordinates."
+        },
+        "codes": {
+          "title": "UN/LOCODE",
+          "description": "Standardized identifiers for transport locations."
+        },
+        "boundaries": {
+          "title": "Port boundaries",
+          "description": "Geographic polygon data for supported ports."
+        }
+      }
+    },
+    "coverage": {
+      "label": "Geographic coverage",
+      "title": "From local coastlines to a global network.",
+      "description": "The dataset contains port names, identifiers and geographic coordinates worldwide. Detailed geographic boundaries are currently available for ports in Northern Germany, with further expansion planned.",
+      "highlight": "Northern Germany",
+      "highlightDescription": "Currently available geographic boundary data"
+    },
+    "structure": {
+      "label": "Data structure",
+      "title": "Structured. Accessible. Open.",
+      "description": "Each port contains a set of geographic and identifying attributes.",
+      "schema": "Port data attributes",
+      "note": "Geographic boundaries are not yet available for every port."
+    },
+    "status": {
+      "label": "Development status",
+      "title": "An evolving dataset.",
+      "current": {
+        "title": "Continuous development",
+        "description": "SeaPorts is a work in progress. Port names, UN/LOCODEs and geographic coordinates are available for ports worldwide. Geographic boundaries are currently defined only for Northern Germany."
+      },
+      "disclaimer": {
+        "title": "Data accuracy",
+        "description": "The dataset is provided as-is. Geographic boundaries are approximate and may not represent actual port areas. Always verify information before using it for critical operational or navigational decisions."
+      }
+    },
+    "license": {
+      "label": "Open source",
+      "title": "Open data. Shared knowledge.",
+      "description": "The dataset is published under Creative Commons Attribution 4.0 International. You are free to share and adapt the data with appropriate attribution and indication of changes.",
+      "dataset": "Dataset license",
+      "source": "Underlying data source",
+      "readMore": "Read license"
+    },
+    "cta": {
+      "title": "Explore the world's seaports.",
+      "description": "Discover the dataset, inspect the source code and contribute to an open maritime data ecosystem.",
+      "button": "View on GitHub"
+    },
+    "footer": {
+      "description": "Open-source maritime data for everyone."
+    }
   }
 }
