@@ -22,10 +22,8 @@ export default async function SeaportsPage() {
 
     return (
         <main className="min-h-screen bg-white text-slate-950 transition-colors duration-300 dark:bg-[#0c0e0f] dark:text-white">
-
             {/* Hero */}
             <section className="relative flex min-h-170 flex-col justify-between overflow-hidden border-b border-slate-200 dark:border-white/10">
-
                 <video
                     autoPlay
                     muted
@@ -54,7 +52,6 @@ export default async function SeaportsPage() {
                 </div>
 
                 <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-24 pb-20 lg:px-12 lg:pb-28">
-
                     <div className="mb-8 flex items-center gap-3">
                         <span className="h-px w-8 bg-white/70" />
                         <span className="text-xs font-medium tracking-[0.25em] text-white/70 uppercase">
@@ -74,22 +71,16 @@ export default async function SeaportsPage() {
                     </p>
 
                     <div className="mt-10 flex flex-wrap items-center gap-4">
-
-                        <Button
-                            asChild
-                            className="h-12 rounded-full bg-white px-6 text-sm font-semibold text-black hover:bg-white/85"
+                        <a
+                            href={GITHUB_URL}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm font-semibold text-black hover:bg-white/85"
                         >
-                            <a
-                                href={GITHUB_URL}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center justify-center gap-2"
-                            >
-                                <SiGithub className="size-4 shrink-0" />
-                                <span>{t("hero.github")}</span>
-                                <ArrowUpRight className="size-4 shrink-0" />
-                            </a>
-                        </Button>
+                            <SiGithub className="size-4 shrink-0" />
+                            <span>{t("hero.github")}</span>
+                            <ArrowUpRight className="size-4 shrink-0" />
+                        </a>
 
                         <a
                             href="#overview"
@@ -113,7 +104,6 @@ export default async function SeaportsPage() {
                 className="mx-auto max-w-7xl px-6 py-24 transition-colors duration-300 lg:px-12 lg:py-32"
             >
                 <div className="grid gap-16 lg:grid-cols-[1fr_1.1fr]">
-
                     <div>
                         <p className="mb-5 text-xs font-medium tracking-[0.22em] text-slate-400 uppercase dark:text-white/40">
                             01 / {t("overview.label")}
@@ -143,22 +133,30 @@ export default async function SeaportsPage() {
                             {
                                 icon: Globe2,
                                 title: t("overview.features.global.title"),
-                                description: t("overview.features.global.description"),
+                                description: t(
+                                    "overview.features.global.description"
+                                ),
                             },
                             {
                                 icon: MapPin,
                                 title: t("overview.features.location.title"),
-                                description: t("overview.features.location.description"),
+                                description: t(
+                                    "overview.features.location.description"
+                                ),
                             },
                             {
                                 icon: Database,
                                 title: t("overview.features.codes.title"),
-                                description: t("overview.features.codes.description"),
+                                description: t(
+                                    "overview.features.codes.description"
+                                ),
                             },
                             {
                                 icon: MapPinned,
                                 title: t("overview.features.boundaries.title"),
-                                description: t("overview.features.boundaries.description"),
+                                description: t(
+                                    "overview.features.boundaries.description"
+                                ),
                             },
                         ].map((feature) => (
                             <div
@@ -251,11 +249,31 @@ export default async function SeaportsPage() {
 
                     <div className="grid divide-y divide-slate-200 sm:grid-cols-2 sm:divide-y-0 dark:divide-white/10">
                         {[
-                            ["01", "Port Name", "The official name of the seaport."],
-                            ["02", "UN/LOCODE", "United Nations location identifier."],
-                            ["03", "Country", "Country associated with the port."],
-                            ["04", "Latitude / Longitude", "Geographic coordinates."],
-                            ["05", "Geographical Boundary", "Polygon coordinates describing the port area."],
+                            [
+                                "01",
+                                "Port Name",
+                                "The official name of the seaport.",
+                            ],
+                            [
+                                "02",
+                                "UN/LOCODE",
+                                "United Nations location identifier.",
+                            ],
+                            [
+                                "03",
+                                "Country",
+                                "Country associated with the port.",
+                            ],
+                            [
+                                "04",
+                                "Latitude / Longitude",
+                                "Geographic coordinates.",
+                            ],
+                            [
+                                "05",
+                                "Geographical Boundary",
+                                "Polygon coordinates describing the port area.",
+                            ],
                         ].map(([number, name, description]) => (
                             <div
                                 key={number}
@@ -400,31 +418,28 @@ export default async function SeaportsPage() {
                         {t("cta.description")}
                     </p>
 
-                    <Button
-                        asChild
-                        className="mt-9 h-12 rounded-full bg-slate-950 px-7 text-sm font-semibold text-white hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-white/85"
+                    <a
+                        href={GITHUB_URL}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-9 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-slate-950 px-7 text-sm font-semibold text-white hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-white/85"
                     >
-                        <a
-                            href={GITHUB_URL}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="inline-flex items-center justify-center gap-2"
-                        >
-                            <SiGithub className="size-4 shrink-0" />
-                            <span>{t("cta.button")}</span>
-                            <ArrowUpRight className="size-4 shrink-0" />
-                        </a>
-                    </Button>
+                        <SiGithub className="size-4 shrink-0" />
+                        <span>{t("cta.button")}</span>
+                        <ArrowUpRight className="size-4 shrink-0" />
+                    </a>
                 </div>
             </section>
 
             {/* Footer */}
             <footer className="border-t border-slate-200 dark:border-white/10">
                 <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-12 dark:text-white/40">
-
                     <span className="font-medium text-slate-900 dark:text-white/65">
                         OpenShips
-                        <span className="text-slate-400 dark:text-white/30"> / SeaPorts</span>
+                        <span className="text-slate-400 dark:text-white/30">
+                            {" "}
+                            / SeaPorts
+                        </span>
                     </span>
 
                     <span>{t("footer.description")}</span>
