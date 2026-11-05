@@ -19,7 +19,8 @@ type Settings = {
 export const useSettings = create<Settings>()(
     persist(
         (set, get) => ({
-            mapStyle: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+            mapStyle:
+                "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
             setMapStyle: (style: string) =>
                 set({
                     mapStyle: style,

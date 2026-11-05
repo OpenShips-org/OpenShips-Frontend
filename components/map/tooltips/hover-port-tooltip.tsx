@@ -35,9 +35,7 @@ export default function HoverPortTooltip({
             }}
         >
             <div className="w-64 rounded-xl bg-white/90 px-3 py-2 text-sm dark:bg-black/90 dark:text-white">
-                <div className="mb-2 font-semibold">
-                    {portName}
-                </div>
+                <div className="mb-2 font-semibold">{portName}</div>
 
                 <div className="space-y-2">
                     {(port.country || port.location) && (
@@ -58,7 +56,7 @@ export default function HoverPortTooltip({
                                     <div className="text-xs text-gray-500 dark:text-gray-400">
                                         {t("Port.Location")}
                                     </div>
-                                    <div className="font-medium wrap-break-words">
+                                    <div className="wrap-break-words font-medium">
                                         {port.location}
                                     </div>
                                 </div>
@@ -71,7 +69,7 @@ export default function HoverPortTooltip({
                             <div className="text-xs text-gray-500 dark:text-gray-400">
                                 {t("Port.Subregion")}
                             </div>
-                            <div className="font-medium wrap-break-words">
+                            <div className="wrap-break-words font-medium">
                                 {port.subregion}
                             </div>
                         </div>
@@ -88,7 +86,7 @@ export default function HoverPortTooltip({
 
                                 <div className="font-medium tabular-nums">
                                     {port.latitude != null &&
-                                        port.longitude != null
+                                    port.longitude != null
                                         ? `${port.latitude.toFixed(5)}, ${port.longitude.toFixed(5)}`
                                         : port.latitude != null
                                           ? port.latitude.toFixed(5)
@@ -103,7 +101,7 @@ export default function HoverPortTooltip({
                             <div className="text-xs text-gray-500 dark:text-gray-400">
                                 {t("Port.TimeZone")}
                             </div>
-                            <div className="font-medium wrap-break-words">
+                            <div className="wrap-break-words font-medium">
                                 {port.timeZone}
                             </div>
                         </div>

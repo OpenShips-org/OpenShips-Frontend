@@ -4,7 +4,7 @@ import Draggable from "@/components/map/draggable";
 import { Move } from "lucide-react";
 import { MainIcon } from "@/lib/icons/main-icon";
 import { useVesselDetailsData } from "@/hooks/map/use-data/use-vessel-data";
-import { DestinationType } from "@/models/vessel-destination";
+import { DestinationType } from "@/types/vessel-destination";
 import { useFormatDate } from "@/hooks/useFormatDate";
 import SelectedVesselPreview from "./selected-vessel-preview";
 import { useState } from "react";
@@ -80,7 +80,10 @@ export default function SelectedVesselTooltip({
                         </DrawerHeader>
 
                         <div className="px-4 pb-6">
-                            <VesselImage vesselMmsi={normal.selectedVessel?.mmsi} t={tMap} />
+                            <VesselImage
+                                vesselMmsi={normal.selectedVessel?.mmsi}
+                                t={tMap}
+                            />
 
                             <VesselDetails
                                 normal={normal}

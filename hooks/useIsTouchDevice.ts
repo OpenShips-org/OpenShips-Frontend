@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export function usePrimaryInput() {
     const [isTouch, setIsTouch] = useState(false);
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia('(pointer: coarse)');
+        const mediaQuery = window.matchMedia("(pointer: coarse)");
 
         const update = () => {
             setIsTouch(mediaQuery.matches);
@@ -14,10 +14,10 @@ export function usePrimaryInput() {
 
         update();
 
-        mediaQuery.addEventListener('change', update);
+        mediaQuery.addEventListener("change", update);
 
         return () => {
-            mediaQuery.removeEventListener('change', update);
+            mediaQuery.removeEventListener("change", update);
         };
     }, []);
 

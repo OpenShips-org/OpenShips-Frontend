@@ -23,10 +23,5 @@ export async function Navbar() {
         },
     ];
 
-    return (
-        <NavbarClient
-            title={t("Navbar.Navigation")}
-            links={links}
-        />
-    );
+    return <NavbarClient title={t("Navbar.Navigation")} links={links} />;
 }

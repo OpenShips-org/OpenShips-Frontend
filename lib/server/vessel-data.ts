@@ -1,6 +1,6 @@
 import { API_URL } from "@/config/server";
-import { ApiResponse } from "@/models/api-response";
-import { VesselDetailResponse } from "@/models/vessel-detail-response";
+import { ApiResponse } from "@/types/api-response";
+import { VesselDetailResponse } from "@/types/vessel-detail-response";
 
 export async function getVesselDetails(
     mmsi: number

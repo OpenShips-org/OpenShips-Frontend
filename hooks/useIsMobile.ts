@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 interface UseIsMobileOptions {
     initialIsMobile: boolean;
@@ -28,18 +28,18 @@ export function useIsMobile({
 
         const updateTouch = () => {
             setIsTouch(
-                window.matchMedia('(pointer: coarse)').matches ||
-                navigator.maxTouchPoints > 0
+                window.matchMedia("(pointer: coarse)").matches ||
+                    navigator.maxTouchPoints > 0
             );
         };
 
         updateMobile();
         updateTouch();
 
-        mql.addEventListener('change', updateMobile);
+        mql.addEventListener("change", updateMobile);
 
         return () => {
-            mql.removeEventListener('change', updateMobile);
+            mql.removeEventListener("change", updateMobile);
         };
     }, [breakpoint]);
 

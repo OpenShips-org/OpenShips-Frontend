@@ -8,8 +8,6 @@ import { usePortLayers } from "./use-layer/use-port-layer";
 import { MapBounds } from "@/hooks/map/use-map-bounds";
 import { useCallback } from "react";
 import { PickingInfo } from "deck.gl";
-import { ScatterplotLayer } from "@deck.gl/layers";
-import type { Layer } from "@deck.gl/core";
 
 export interface TrackMapProps {
     bounds: MapBounds | null;

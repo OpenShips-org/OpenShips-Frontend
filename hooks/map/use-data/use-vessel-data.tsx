@@ -1,9 +1,9 @@
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { API_URL, VESSELS_MAX_AGE_MINUTES } from "@/config/runtime";
-import { ApiResponse } from "@/models/api-response";
-import type { VesselPositionResponse } from "@/models/vessel-position-response";
-import { VesselTrackResponse } from "@/models/vessel-track-response";
-import type { VesselDetailResponse } from "@/models/vessel-detail-response";
+import { ApiResponse } from "@/types/api-response";
+import type { VesselPositionResponse } from "@/types/vessel-position-response";
+import { VesselTrackResponse } from "@/types/vessel-track-response";
+import type { VesselDetailResponse } from "@/types/vessel-detail-response";
 
 export function useVesselData(
     enabled: boolean,

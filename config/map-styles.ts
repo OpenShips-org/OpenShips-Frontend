@@ -1,4 +1,3 @@
-
 import type { StyleItem } from "map-gl-style-switcher/react-map-gl";
 
 type MapStyle = StyleItem & {
@@ -26,6 +25,4 @@ const versatilesStyles: MapStyle[] = versatilesThemes.map((theme) => ({
     dark: theme.dark,
 }));
 
-export const mapStyles: MapStyle[] = [
-    ...versatilesStyles,
-];
+export const mapStyles: MapStyle[] = [...versatilesStyles];

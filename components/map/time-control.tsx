@@ -8,10 +8,7 @@ interface TimeControlProps {
     from: Date;
     to: Date;
     currentTime?: Date;
-    onRangeChange: (range: {
-        from: Date;
-        to: Date;
-    }) => void;
+    onRangeChange: (range: { from: Date; to: Date }) => void;
     onTimeChange?: (time: Date) => void;
 }
 
@@ -32,9 +29,7 @@ export default function TimeControl({
     onRangeChange,
     onTimeChange,
 }: TimeControlProps) {
-    const handleRangeChange = (
-        value: number | readonly number[]
-    ) => {
+    const handleRangeChange = (value: number | readonly number[]) => {
         if (!Array.isArray(value) || value.length !== 2) return;
 
         const [fromTimestamp, toTimestamp] = value;

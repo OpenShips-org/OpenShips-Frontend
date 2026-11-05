@@ -6,16 +6,16 @@ import { isMobileUserAgent } from "./lib/device";
 const intlMiddleware = createMiddleware(routing);
 
 export default function proxy(request: NextRequest) {
-  const response = intlMiddleware(request);
+    const response = intlMiddleware(request);
 
-  const userAgent = request.headers.get("user-agent") ?? "";
-  const isMobile = isMobileUserAgent(userAgent);
+    const userAgent = request.headers.get("user-agent") ?? "";
+    const isMobile = isMobileUserAgent(userAgent);
 
-  response.headers.set("x-is-mobile", String(isMobile));
+    response.headers.set("x-is-mobile", String(isMobile));
 
-  return response;
+    return response;
 }
 
 export const config = {
-  matcher: "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
+    matcher: "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
 };

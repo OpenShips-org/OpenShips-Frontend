@@ -24,7 +24,7 @@ interface MainMapProps {
     mode: MapMode;
     children?: ReactNode;
     mapChildren?: ReactNode;
-};
+}
 
 type TooltipState = {
     x: number;

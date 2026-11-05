@@ -6,11 +6,7 @@ interface NavbarLinkProps {
     children: React.ReactNode;
 }
 
-export default function NavbarLink({
-    href,
-    icon,
-    children,
-}: NavbarLinkProps) {
+export default function NavbarLink({ href, icon, children }: NavbarLinkProps) {
     return (
         <Link
             href={href}

@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import { convertSpeed } from "@/lib/unit-utils";
-import { NavigationStatus } from "@/models/navigation-status";
-import { AisSource } from "@/models/ais-source";
-import { AisDataLicense } from "@/models/ais-data-license";
+import { NavigationStatus } from "@/types/navigation-status";
+import { AisSource } from "@/types/ais-source";
+import { AisDataLicense } from "@/types/ais-data-license";
 import { useFormatDate } from "@/hooks/useFormatDate";
 import { Link } from "@/i18n/navigation";
 
@@ -199,13 +199,13 @@ export default function VesselDetails({
             <div className="flex flex-row items-center justify-center gap-10">
                 <Link
                     href={`/track/${normal.selectedVessel.mmsi}`}
-                    className="p-4 m-2 bg-primary rounded-lg text-center text-white"
+                    className="m-2 rounded-lg bg-primary p-4 text-center text-white"
                 >
                     {tMap("General.ViewTrack")}
                 </Link>
                 <Link
                     href={`/vessel/${normal.selectedVessel.mmsi}`}
-                    className="p-4 m-2 bg-primary rounded-lg text-center text-white"
+                    className="m-2 rounded-lg bg-primary p-4 text-center text-white"
                 >
                     {tMap("General.ViewDetails")}
                 </Link>

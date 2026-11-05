@@ -1,4 +1,4 @@
-import { NavigationStatus } from "@/models/navigation-status";
+import { NavigationStatus } from "@/types/navigation-status";
 import { colorForVesselType } from "./icon-utils";
 
 export function GenerateVesselIcon(

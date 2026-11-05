@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { convertSpeed } from "@/lib/unit-utils";
-import { NavigationStatus } from "@/models/navigation-status";
+import { NavigationStatus } from "@/types/navigation-status";
 import { useFormatDate } from "@/hooks/useFormatDate";
 
 export default function HoverVesselTooltip({
@@ -68,7 +68,7 @@ export default function HoverVesselTooltip({
                     <span className="text-xs text-gray-500 dark:text-gray-400">
                         {t("General.NavigationStatus")}
                     </span>
-                    <span className="break-words font-medium">
+                    <span className="font-medium break-words">
                         {tAis(
                             "NavigationStatus." +
                                 NavigationStatus[

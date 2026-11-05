@@ -1,7 +1,7 @@
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { API_URL } from "@/config/runtime";
-import { ApiResponse } from "@/models/api-response";
-import { PortResponse } from "@/models/port-response";
+import { ApiResponse } from "@/types/api-response";
+import { PortResponse } from "@/types/port-response";
 
 export function usePortData(
     enabled: boolean,

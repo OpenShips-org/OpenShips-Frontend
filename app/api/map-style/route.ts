@@ -1,4 +1,3 @@
-
 import { NextRequest, NextResponse } from "next/server";
 import { osm, satellite, inlineSources } from "@versatiles/style";
 

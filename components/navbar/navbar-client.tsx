@@ -15,10 +15,7 @@ interface NavbarClientProps {
     links: NavbarItem[];
 }
 
-export default function NavbarClient({
-    title,
-    links,
-}: NavbarClientProps) {
+export default function NavbarClient({ title, links }: NavbarClientProps) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -27,22 +24,7 @@ export default function NavbarClient({
             {!open && (
                 <button
                     onClick={() => setOpen(true)}
-                    className="
-                        fixed
-                        left-3
-                        top-3
-                        z-[10001]
-                        flex
-                        size-11
-                        items-center
-                        justify-center
-                        rounded-xl
-                        border
-                        bg-background/95
-                        shadow-lg
-                        backdrop-blur
-                        md:hidden
-                    "
+                    className="fixed top-3 left-3 z-[10001] flex size-11 items-center justify-center rounded-xl border bg-background/95 shadow-lg backdrop-blur md:hidden"
                     aria-label="Navigation öffnen"
                 >
                     <Menu className="size-6" />
@@ -53,52 +35,15 @@ export default function NavbarClient({
             {open && (
                 <button
                     onClick={() => setOpen(false)}
-                    className="
-                        fixed
-                        inset-0
-                        z-[9998]
-                        bg-black/40
-                        md:hidden
-                    "
+                    className="fixed inset-0 z-[9998] bg-black/40 md:hidden"
                     aria-label="Navigation schließen"
                 />
             )}
 
             <aside
-                className={`
-                    group
-                    fixed
-                    z-[10002]
-                    overflow-hidden
-                    border
-                    bg-background/95
-                    shadow-lg
-                    backdrop-blur
-                    transition-all
-                    duration-200
-                    ease-in-out
-
-                    /* Desktop */
-                    md:top-4
-                    md:bottom-4
-                    md:left-4
-                    md:w-14
-                    md:rounded-xl
-                    md:hover:w-64
-
-                    /* Mobile */
-                    max-md:top-0
-                    max-md:bottom-0
-                    max-md:left-0
-                    max-md:rounded-r-xl
-                    max-md:w-[75vw]
-
-                    ${
-                        open
-                            ? "max-md:translate-x-0"
-                            : "max-md:-translate-x-full"
-                    }
-                `}
+                className={`group /* Desktop */ /* Mobile */ fixed z-[10002] overflow-hidden border bg-background/95 shadow-lg backdrop-blur transition-all duration-200 ease-in-out max-md:top-0 max-md:bottom-0 max-md:left-0 max-md:w-[75vw] max-md:rounded-r-xl md:top-4 md:bottom-4 md:left-4 md:w-14 md:rounded-xl md:hover:w-64 ${
+                    open ? "max-md:translate-x-0" : "max-md:-translate-x-full"
+                } `}
             >
                 <div className="flex h-full flex-col">
                     {/* Header */}

@@ -19,8 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const locale = await getLocale();
 
     const config =
-        localeConfig[locale as keyof typeof localeConfig] ??
-        localeConfig.en;
+        localeConfig[locale as keyof typeof localeConfig] ?? localeConfig.en;
 
     const url = `${BASE_URL}/${locale}`;
 

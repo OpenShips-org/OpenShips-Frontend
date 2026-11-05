@@ -2,9 +2,9 @@ import { getVesselDetails } from "@/lib/server/vessel-data";
 import { getVesselDestination } from "@/lib/server/destination";
 import VesselImage from "@/components/vessel/vessel-image";
 import { getTranslations } from "next-intl/server";
-import { DestinationType } from "@/models/vessel-destination";
-import { AisDataLicense } from "@/models/ais-data-license";
-import { AisSource } from "@/models/ais-source";
+import { DestinationType } from "@/types/vessel-destination";
+import { AisDataLicense } from "@/types/ais-data-license";
+import { AisSource } from "@/types/ais-source";
 
 type PageProps = {
     params: Promise<{

@@ -8,12 +8,12 @@ import {
 import { GenerateVesselIcon } from "@/lib/icons/vessel-icon";
 import { Layer } from "@deck.gl/core";
 import { svgToDataUrl } from "@/lib/icon-utils";
-import { ApiResponse } from "@/models/api-response";
-import type { VesselPositionResponse } from "@/models/vessel-position-response";
-import { NavigationStatus } from "@/models/navigation-status";
+import { ApiResponse } from "@/types/api-response";
+import type { VesselPositionResponse } from "@/types/vessel-position-response";
+import { NavigationStatus } from "@/types/navigation-status";
 import { PickingInfo } from "@deck.gl/core";
 import { sharpTextFontSettings } from "@/config/text-settings";
-import { VesselTrackResponse } from "@/models/vessel-track-response";
+import { VesselTrackResponse } from "@/types/vessel-track-response";
 
 const vesselIconCache = new Map<string, string>();
 
