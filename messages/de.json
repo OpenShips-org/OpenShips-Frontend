@@ -95,7 +95,15 @@
     "Navigation": "Navigation",
     "Map": "Karte",
     "Vessels": "Schiffe",
-    "Ports": "Häfen"
+    "VesselsOverview": "Übersicht",
+    "VesselsSearch": "Suche",
+    "VesselsFleet": "Flotte",
+    "Ports": "Häfen",
+    "PortsOverview": "Übersicht",
+    "PortsSearch": "Suche",
+    "PortsList": "Liste",
+    "OpenData": "Open-Data",
+    "Seaports": "Seehäfen"
   },
   "SeaportsPage": {
     "eyebrow": "Open-Data-Initiative",

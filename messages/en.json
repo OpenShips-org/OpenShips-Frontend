@@ -95,7 +95,15 @@
     "Navigation": "Navigation",
     "Map": "Map",
     "Vessels": "Vessels",
-    "Ports": "Ports"
+    "VesselsOverview": "Overview",
+    "VesselsSearch": "Search",
+    "VesselsFleet": "Fleet",
+    "Ports": "Ports",
+    "PortsOverview": "Overview",
+    "PortsSearch": "Search",
+    "PortsList": "List",
+    "OpenData": "Open Data",
+    "Seaports": "Seaports"
   },
   "SeaportsPage": {
     "eyebrow": "Open data initiative",
