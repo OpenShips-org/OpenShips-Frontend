@@ -5,6 +5,7 @@ import { AisSource } from "@/types/ais-source";
 import { AisDataLicense } from "@/types/ais-data-license";
 import { useFormatDate } from "@/hooks/useFormatDate";
 import { Link } from "@/i18n/navigation";
+import { Info } from 'lucide-react';
 
 export default function VesselDetails({
     normal,
@@ -189,23 +190,29 @@ export default function VesselDetails({
                 <span className="text-xs text-gray-500 dark:text-gray-400">
                     {tMap("General.AISDataLicense")}
                 </span>
-                <span className="truncate font-medium">
+                <span className="truncate font-medium flex items-center">
                     {AisDataLicense[normal.selectedVessel.license ?? 0]}
+                    <Link
+                        href="/ais/licenses"
+                        className="ml-1 text-blue-500 hover:underline"
+                    >
+                        <Info className="h-3 w-3" />
+                    </Link>
                 </span>
             </div>
 
             <hr className="mx-2 my-1" />
 
-            <div className="flex flex-row items-center justify-center gap-10">
+            <div className="flex flex-row items-center justify-center gap-1">
                 <Link
                     href={`/track/${normal.selectedVessel.mmsi}`}
-                    className="m-2 rounded-lg bg-primary p-4 text-center text-white"
+                    className="m-2 rounded-lg bg-primary py-2 px-2 text-center text-white"
                 >
                     {tMap("General.ViewTrack")}
                 </Link>
                 <Link
                     href={`/vessel/${normal.selectedVessel.mmsi}`}
-                    className="m-2 rounded-lg bg-primary p-4 text-center text-white"
+                    className="m-2 rounded-lg bg-primary py-2 px-2 text-center text-white"
                 >
                     {tMap("General.ViewDetails")}
                 </Link>

@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist_Mono, Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -9,6 +9,7 @@ import "flag-icons/css/flag-icons.min.css";
 import Script from "next/script";
 
 import { Navbar } from "@/components/navbar/navbar";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -33,13 +34,20 @@ export default function RootLayout({
                 inter.variable
             )}
         >
-            <body>
+            <body className="min-h-dvh">
                 <Script src="/runtime-config.js" strategy="beforeInteractive" />
+
                 <NextIntlClientProvider>
                     <ThemeProvider>
                         <QueryClientProvider>
-                            <Navbar />
-                            {children}
+                            <div className="flex h-dvh flex-col overflow-hidden">
+                                {/* <Navbar /> */}
+                                <main className="min-h-0 min-w-0 flex-1 overflow-y-auto">
+                                    {children}
+                                </main>
+
+                                <Footer />
+                            </div>
                         </QueryClientProvider>
                     </ThemeProvider>
                 </NextIntlClientProvider>

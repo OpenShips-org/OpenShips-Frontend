@@ -3,6 +3,7 @@ declare global {
         __OPENSHIPS_CONFIG__?: {
             apiUrl?: string;
             vesselsMaxAgeMinutes?: number;
+            baseUrl?: string;
         };
     }
 }
@@ -14,3 +15,5 @@ export const API_URL = runtimeConfig?.apiUrl || "http://localhost:5018";
 
 export const VESSELS_MAX_AGE_MINUTES =
     Number(runtimeConfig?.vesselsMaxAgeMinutes) || 60;
+
+export const BASE_URL = runtimeConfig?.baseUrl || "https://openships.de";

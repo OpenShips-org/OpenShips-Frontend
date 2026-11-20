@@ -4,27 +4,27 @@
   },
   "Map": {
     "General": {
-        "UnknownVessel": "Unbekanntes Schiff",
-        "Unknown": "Unbekannt",
-        "MMSI": "MMSI",
-        "IMO": "IMO",
-        "NavigationStatus": "Navigationsstatus",
-        "CallSign": "Rufzeichen",
-        "VesselType": "Schiffstyp",
-        "Length": "Länge",
-        "Width": "Breite",
-        "Destination": "Ziel",
-        "ETA": "ETA",
-        "Speed": "Geschwindigkeit",
-        "Course": "Kurs",
-        "Draught": "Tiefgang",
-        "LastUpdate": "Letzte Aktualisierung",
-        "AISSource": "AIS-Quelle",
-        "AISDataLicense": "AIS-Datenlizenz",
-        "Timestamp": "Zeitstempel",
-        "NoVesselPhoto": "Kein Schiffsfoto verfügbar",
-        "ViewTrack": "Historie anzeigen",
-        "ViewDetails": "Details anzeigen"
+      "UnknownVessel": "Unbekanntes Schiff",
+      "Unknown": "Unbekannt",
+      "MMSI": "MMSI",
+      "IMO": "IMO",
+      "NavigationStatus": "Navigationsstatus",
+      "CallSign": "Rufzeichen",
+      "VesselType": "Schiffstyp",
+      "Length": "Länge",
+      "Width": "Breite",
+      "Destination": "Ziel",
+      "ETA": "ETA",
+      "Speed": "Geschwindigkeit",
+      "Course": "Kurs",
+      "Draught": "Tiefgang",
+      "LastUpdate": "Letzte Aktualisierung",
+      "AISSource": "AIS-Quelle",
+      "AISDataLicense": "AIS-Datenlizenz",
+      "Timestamp": "Zeitstempel",
+      "NoVesselPhoto": "Kein Schiffsfoto verfügbar",
+      "ViewTrack": "Historie anzeigen",
+      "ViewDetails": "Details anzeigen"
     },
     "Port": {
       "Name": "Name",
@@ -37,22 +37,22 @@
   },
   "AIS": {
     "Source": {
-        "AisStream": "aisstream.io",
-        "Pelyr": "Pelyr",
-        "DigitrafficFinnland": "Digitraffic Finland",
-        "BarentsWatch": "BarentsWatch Live AIS"
+      "AisStream": "aisstream.io",
+      "Pelyr": "Pelyr",
+      "DigitrafficFinnland": "Digitraffic Finland",
+      "BarentsWatch": "BarentsWatch Live AIS"
     },
     "NavigationStatus": {
-        "UnderWay": "Unterwegs",
-        "Anchored": "Geankert",
-        "NotUnderCommand": "Nicht unter Befehl",
-        "Restricted": "Eingeschränkte Manövrierfähigkeit",
-        "ConstrainedByDraught": "Eingeschränkt durch Tiefgang",
-        "Moored": "Gebockt",
-        "Aground": "Auf Grund gelaufen",
-        "EngagedInFishing": "Fischend",
-        "UnderWaySailing": "Unterwegs segelnd",
-        "AisSartActive": "AIS SART aktiv"
+      "UnderWay": "Unterwegs",
+      "Anchored": "Geankert",
+      "NotUnderCommand": "Nicht unter Befehl",
+      "Restricted": "Eingeschränkte Manövrierfähigkeit",
+      "ConstrainedByDraught": "Eingeschränkt durch Tiefgang",
+      "Moored": "Gebockt",
+      "Aground": "Auf Grund gelaufen",
+      "EngagedInFishing": "Fischend",
+      "UnderWaySailing": "Unterwegs segelnd",
+      "AisSartActive": "AIS SART aktiv"
     },
     "Destination": {
       "single": "{to}",
@@ -63,28 +63,46 @@
   },
   "AISPages": {
     "LicensePage": {
-        "PageTitle": "AIS-Datenquellen und Lizenzen",
-        "PageDescription": "Die AIS-Daten, die auf dieser Website angezeigt werden, stammen von verschiedenen Quellen. Die Lizenzen für die einzelnen Quellen sind unten aufgeführt. Bitte beachten Sie, dass die Daten möglicherweise zusätzlichen Nutzungsbedingungen unterliegen, die von den jeweiligen Datenanbietern festgelegt wurden.",
-        "Contents": "Inhalt",
-        "License": "Lizenz",
-        "Source": "Quelle",
-        "SourceLink": "Link",
-        "Description": "Beschreibung",
-        "AisStream": {
-            "License": "Unbekannte Lizenz",
-            "Source": "aisstream.io",
-            "Description": "Die Lizenz für die AIS-Daten von aisstream.io ist derzeit unbekannt. Bitte konsultieren Sie die Quelle für weitere Informationen."
-        },
-        "Pelyr": {
-            "License": "LicenseRef-Pelyr-1.1",
-            "Source": "pelyr.com",
-            "Description": "AIS data from Pelyr (pelyr.com), Pelyr Data Licence 1.1"
-        },
-        "FintrafficDigitraffic": {
-            "License": "CC BY 4.0",
-            "Source": "digitraffic.fi",
-            "Description": "AIS data from Fintraffic Digitraffic (digitraffic.fi), licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)."
-        }
+      "PageTitle": "AIS-Datenquellen und Lizenzen",
+      "PageDescription": "Die AIS-Daten, die auf dieser Website angezeigt werden, stammen von verschiedenen Quellen. Die Lizenzen und erforderlichen Quellenangaben für die einzelnen Datenquellen sind unten aufgeführt. Bitte beachten Sie, dass die Daten möglicherweise zusätzlichen Nutzungsbedingungen unterliegen, die von den jeweiligen Datenanbietern festgelegt wurden.",
+      "Contents": "Inhalt",
+      "License": "Lizenz",
+      "Source": "Quelle",
+      "SourceLink": "Link",
+      "Description": "Beschreibung",
+      "AisStream": {
+        "License": "Unbekannte Lizenz",
+        "Source": "aisstream.io",
+        "Description": "Die Lizenz für die AIS-Daten von aisstream.io ist derzeit unbekannt. Bitte konsultieren Sie die Quelle für weitere Informationen."
+      },
+      "Pelyr": {
+        "License": "Pelyr Data Licence 2.0 (LicenseRef-Pelyr-2.0)",
+        "Source": "pelyr.com",
+        "Description": "AIS-Daten von Pelyr (pelyr.com), bereitgestellt unter der Pelyr Data Licence 2.0.",
+        "Attribution": "AIS data from Pelyr (pelyr.com), Pelyr Data Licence 2.0"
+      },
+      "FintrafficDigitraffic": {
+        "License": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "Source": "digitraffic.fi",
+        "Description": "AIS-Daten von Fintraffic Digitraffic (digitraffic.fi), lizenziert unter Creative Commons Attribution 4.0 International (CC BY 4.0). Die Daten wurden von Pelyr konvertiert und zusammengeführt.",
+        "Attribution": "Source: Fintraffic / digitraffic.fi, license CC 4.0 BY (https://creativecommons.org/licenses/by/4.0/). Converted and combined by Pelyr."
+      },
+      "Kystverket": {
+        "License": "Norwegian Licence for Open Government Data (NLOD) 2.0",
+        "Source": "kystverket.no",
+        "Description": "Daten der norwegischen Küstenverwaltung Kystverket, bereitgestellt unter der Norwegian Licence for Open Government Data (NLOD) 2.0. Die Daten wurden von Pelyr konvertiert und zusammengeführt.",
+        "Attribution": "Contains data under the Norwegian licence for Open Government data (NLOD) distributed by Kystverket (Norwegian Coastal Administration) (https://data.norge.no/nlod/en/2.0). Converted and combined by Pelyr."
+      },
+      "BarentsWatch": {
+        "License": "Norwegian Licence for Open Government Data (NLOD) 2.0",
+        "Source": "barentswatch.no",
+        "Description": "Daten von BarentsWatch (barentswatch.no). Dateneigentümer ist Kystverket. Die Daten unterliegen der Norwegian Licence for Open Government Data (NLOD) 2.0 und wurden von Pelyr konvertiert und zusammengeführt.",
+        "Attribution": "Data delivered by BarentsWatch (barentswatch.no), data owner Kystverket, NLOD 2.0 (https://data.norge.no/nlod/en/2.0). Converted and combined by Pelyr."
+      },
+      "Metadata": {
+        "Title": "OpenShips - Lizenzen für AIS-Datenquellen",
+        "Description": "Die AIS-Daten, die auf dieser Website angezeigt werden, stammen von verschiedenen Quellen. Die Lizenzen und erforderlichen Quellenangaben für die einzelnen Datenquellen sind unten aufgeführt. Bitte beachten Sie, dass die Daten möglicherweise zusätzlichen Nutzungsbedingungen unterliegen, die von den jeweiligen Datenanbietern festgelegt wurden."
+      }
     }
   },
   "Metadata": {
@@ -179,6 +197,54 @@
     },
     "footer": {
       "description": "Offene maritime Daten für alle."
+    }
+  },
+  "Imprint": {
+    "title": "Impressum",
+    "legalBasis": "Angaben gemäß § 18 Abs. 1 MStV",
+    "contact": "Kontakt",
+    "email": "E-Mail"
+  },
+  "Footer": {
+    "copyright": "© 2026 OpenShips",
+    "privacyPolicy": "Datenschutz",
+    "imprint": "Impressum"
+  },
+  "Privacy": {
+    "title": "Datenschutzerklärung",
+    "description": "Informationen zur Verarbeitung personenbezogener Daten auf dieser Website.",
+    "lastUpdated": "Stand: 20. November 2026",
+    "responsible": {
+      "title": "1. Verantwortlicher",
+      "content": "Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:"
+    },
+    "hosting": {
+      "title": "2. Hosting",
+      "content": "Diese Website wird auf einem eigenen virtuellen privaten Server (VPS) bei der STRATO GmbH, Otto-Ostrowski-Straße 7, 10249 Berlin, Deutschland, betrieben.\n\nSTRATO stellt die technische Infrastruktur für den Betrieb der Website bereit. Im Rahmen des Hostings kann STRATO personenbezogene Daten verarbeiten, soweit dies zur Bereitstellung und Absicherung der Infrastruktur erforderlich ist.\n\nWeitere Informationen zum Datenschutz bei STRATO findest du unter https://www.strato.de/datenschutz/.\n\nSoweit erforderlich, erfolgt die Verarbeitung durch STRATO auf Grundlage einer Vereinbarung zur Auftragsverarbeitung gemäß Art. 28 DSGVO."
+    },
+    "logs": {
+      "title": "3. Server-Logfiles",
+      "content": "Beim Aufruf dieser Website werden durch den Server automatisch technische Zugriffsdaten verarbeitet. Dazu können insbesondere die IP-Adresse, Datum und Uhrzeit des Zugriffs, die angeforderte URL, der HTTP-Statuscode, die übertragene Datenmenge, die Referrer-URL sowie Informationen zum verwendeten Browser und Betriebssystem gehören.\n\nDiese Daten werden verarbeitet, um die Website technisch bereitzustellen, die Sicherheit und Stabilität des Servers zu gewährleisten und Fehler sowie missbräuchliche Zugriffe erkennen zu können.\n\nRechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt im sicheren und zuverlässigen Betrieb der Website.\n\nDie Logdaten werden nur so lange gespeichert, wie dies für die genannten Zwecke erforderlich ist, und anschließend gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten oder konkreten Sicherheitsvorfälle eine längere Speicherung erfordern."
+    },
+    "maps": {
+      "title": "4. Interaktive Karte und Kartendaten",
+      "content": "Diese Website bietet eine interaktive Karte. Die hierfür benötigten Kartendaten und Kartenkacheln werden von einem eigenen Tile-Server bereitgestellt, der auf demselben STRATO-VPS wie diese Website betrieben wird.\n\nBeim Laden und Verwenden der Karte stellt dein Browser Anfragen an diesen Server. Dabei werden technisch notwendige Verbindungsdaten, insbesondere deine IP-Adresse sowie Informationen über die angeforderten Kartenkacheln, verarbeitet.\n\nDie Verarbeitung erfolgt zur Bereitstellung der ausdrücklich aufgerufenen Kartenfunktion und zur Gewährleistung des technischen Betriebs.\n\nEs werden hierfür keine externen Kartenanbieter eingebunden."
+    },
+    "localStorage": {
+      "title": "5. Speicherung lokaler Einstellungen",
+      "content": "Diese Website verwendet den lokalen Browserspeicher (localStorage), um bestimmte Einstellungen auf deinem Gerät zu speichern.\n\nGespeichert werden:\n- die zuletzt verwendete Kartenposition und Zoomstufe;\n- die gewählte Darstellung (Hell- oder Dunkelmodus).\n\nDiese Informationen dienen dazu, deine Einstellungen bei einem erneuten Besuch wiederherzustellen. Sie werden nicht an externe Anbieter übermittelt.\n\nDu kannst die gespeicherten Daten jederzeit über die Einstellungen deines Browsers löschen.\n\nDie Speicherung erfolgt im Rahmen der Bereitstellung der jeweiligen Website-Funktionen. Die rechtliche Zulässigkeit richtet sich insbesondere nach § 25 TDDDG und den datenschutzrechtlichen Vorgaben der DSGVO."
+    },
+    "email": {
+      "title": "6. Kontaktaufnahme per E-Mail",
+      "content": "Wenn du mich per E-Mail kontaktierst, werden die von dir übermittelten Angaben einschließlich deiner E-Mail-Adresse und des Inhalts deiner Nachricht verarbeitet, um deine Anfrage zu bearbeiten.\n\nDie Verarbeitung erfolgt je nach Inhalt der Anfrage auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.\n\nDie Daten werden gelöscht, sobald deine Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten oder sonstigen berechtigten Gründe einer Löschung entgegenstehen."
+    },
+    "rights": {
+      "title": "7. Deine Rechte",
+      "content": "Du hast im Rahmen der gesetzlichen Voraussetzungen folgende Rechte hinsichtlich deiner personenbezogenen Daten:\n\n- Recht auf Auskunft gemäß Art. 15 DSGVO;\n- Recht auf Berichtigung gemäß Art. 16 DSGVO;\n- Recht auf Löschung gemäß Art. 17 DSGVO;\n- Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO;\n- Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO;\n- Recht auf Widerspruch gegen die Verarbeitung gemäß Art. 21 DSGVO.\n\nAußerdem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung deiner personenbezogenen Daten zu beschweren."
+    },
+    "security": {
+      "title": "8. Verschlüsselung",
+      "content": "Diese Website verwendet eine SSL- bzw. TLS-Verschlüsselung, um übertragene Inhalte vor dem Zugriff durch unbefugte Dritte zu schützen. Eine verschlüsselte Verbindung erkennst du an der Verwendung von https:// in der Adresszeile deines Browsers."
     }
   }
 }
