@@ -4,27 +4,27 @@
   },
   "Map": {
     "General": {
-        "UnknownVessel": "Unknown vessel",
-        "Unknown": "Unknown",
-        "MMSI": "MMSI",
-        "IMO": "IMO",
-        "NavigationStatus": "Navigation status",
-        "CallSign": "Call sign",
-        "VesselType": "Vessel type",
-        "Length": "Length",
-        "Width": "Width",
-        "Destination": "Destination",
-        "ETA": "ETA",
-        "Speed": "Speed",
-        "Course": "Course",
-        "Draught": "Draught",
-        "LastUpdate": "Last update",
-        "AISSource": "AIS source",
-        "AISDataLicense": "AIS data license",
-        "Timestamp": "Timestamp",
-        "NoVesselPhoto": "No vessel photo available",
-        "ViewTrack": "View Track",
-        "ViewDetails": "View Details"
+      "UnknownVessel": "Unknown vessel",
+      "Unknown": "Unknown",
+      "MMSI": "MMSI",
+      "IMO": "IMO",
+      "NavigationStatus": "Navigation status",
+      "CallSign": "Call sign",
+      "VesselType": "Vessel type",
+      "Length": "Length",
+      "Width": "Width",
+      "Destination": "Destination",
+      "ETA": "ETA",
+      "Speed": "Speed",
+      "Course": "Course",
+      "Draught": "Draught",
+      "LastUpdate": "Last update",
+      "AISSource": "AIS source",
+      "AISDataLicense": "AIS data license",
+      "Timestamp": "Timestamp",
+      "NoVesselPhoto": "No vessel photo available",
+      "ViewTrack": "View Track",
+      "ViewDetails": "View Details"
     },
     "Port": {
       "Name": "Name",
@@ -37,22 +37,22 @@
   },
   "AIS": {
     "Source": {
-        "AisStream": "aisstream.io",
-        "Pelyr": "Pelyr",
-        "DigitrafficFinnland": "Digitraffic Finland",
-        "BarentsWatch": "BarentsWatch Live AIS"
+      "AisStream": "aisstream.io",
+      "Pelyr": "Pelyr",
+      "DigitrafficFinnland": "Digitraffic Finland",
+      "BarentsWatch": "BarentsWatch Live AIS"
     },
     "NavigationStatus": {
-        "UnderWay": "Under way",
-        "Anchored": "Anchored",
-        "NotUnderCommand": "Not under command",
-        "Restricted": "Restricted",
-        "ConstrainedByDraught": "Constrained by draught",
-        "Moored": "Moored",
-        "Aground": "Aground",
-        "EngagedInFishing": "Engaged in fishing",
-        "UnderWaySailing": "Under way sailing",
-        "AisSartActive": "AIS SART active"
+      "UnderWay": "Under way",
+      "Anchored": "Anchored",
+      "NotUnderCommand": "Not under command",
+      "Restricted": "Restricted",
+      "ConstrainedByDraught": "Constrained by draught",
+      "Moored": "Moored",
+      "Aground": "Aground",
+      "EngagedInFishing": "Engaged in fishing",
+      "UnderWaySailing": "Under way sailing",
+      "AisSartActive": "AIS SART active"
     },
     "Destination": {
       "single": "{to}",
@@ -63,28 +63,46 @@
   },
   "AISPages": {
     "LicensePage": {
-        "PageTitle": "AIS data license",
-        "PageDescription": "The AIS data displayed on this website is provided by various sources. The licenses for the individual sources are listed below. Please note that the data may be subject to additional terms and conditions imposed by the respective data providers.",
-        "Contents": "Contents",
-        "License": "License",
-        "Source": "Source",
-        "SourceLink": "Link",
-        "Description": "Description",
-        "AisStream": {
-            "License": "Unknown license",
-            "Source": "aisstream.io",
-            "Description": "The license for the AIS data provided by aisstream.io is currently unknown. Please refer to the source for more information."
-        },
-        "Pelyr": {
-            "License": "LicenseRef-Pelyr-1.1",
-            "Source": "pelyr.com",
-            "Description": "AIS data from Pelyr (pelyr.com), Pelyr Data Licence 1.1"
-        },
-        "FintrafficDigitraffic": {
-            "License": "CC BY 4.0",
-            "Source": "digitraffic.fi",
-            "Description": "AIS data from Fintraffic Digitraffic (digitraffic.fi), licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)."
-        }
+      "PageTitle": "AIS Data Sources and Licenses",
+      "PageDescription": "The AIS data displayed on this website is provided by various sources. The licenses and required attributions for each data source are listed below. Please note that the data may be subject to additional terms and conditions imposed by the respective data providers.",
+      "Contents": "Contents",
+      "License": "License",
+      "Source": "Source",
+      "SourceLink": "Link",
+      "Description": "Description",
+      "AisStream": {
+        "License": "Unknown license",
+        "Source": "aisstream.io",
+        "Description": "The license for the AIS data provided by aisstream.io is currently unknown. Please refer to the source for more information."
+      },
+      "Pelyr": {
+        "License": "Pelyr Data Licence 2.0 (LicenseRef-Pelyr-2.0)",
+        "Source": "pelyr.com",
+        "Description": "AIS data from Pelyr (pelyr.com), provided under the Pelyr Data Licence 2.0.",
+        "Attribution": "AIS data from Pelyr (pelyr.com), Pelyr Data Licence 2.0"
+      },
+      "FintrafficDigitraffic": {
+        "License": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "Source": "digitraffic.fi",
+        "Description": "AIS data from Fintraffic Digitraffic (digitraffic.fi), licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). The data was converted and combined by Pelyr.",
+        "Attribution": "Source: Fintraffic / digitraffic.fi, license CC 4.0 BY (https://creativecommons.org/licenses/by/4.0/). Converted and combined by Pelyr."
+      },
+      "Kystverket": {
+        "License": "Norwegian Licence for Open Government Data (NLOD) 2.0",
+        "Source": "kystverket.no",
+        "Description": "Data from the Norwegian Coastal Administration (Kystverket), provided under the Norwegian Licence for Open Government Data (NLOD) 2.0. The data was converted and combined by Pelyr.",
+        "Attribution": "Contains data under the Norwegian licence for Open Government data (NLOD) distributed by Kystverket (Norwegian Coastal Administration) (https://data.norge.no/nlod/en/2.0). Converted and combined by Pelyr."
+      },
+      "BarentsWatch": {
+        "License": "Norwegian Licence for Open Government Data (NLOD) 2.0",
+        "Source": "barentswatch.no",
+        "Description": "Data delivered by BarentsWatch (barentswatch.no), with Kystverket as the data owner. The data is provided under NLOD 2.0 and was converted and combined by Pelyr.",
+        "Attribution": "Data delivered by BarentsWatch (barentswatch.no), data owner Kystverket, NLOD 2.0 (https://data.norge.no/nlod/en/2.0). Converted and combined by Pelyr."
+      },
+      "Metadata": {
+        "Title": "OpenShips - Licenses for AIS Data Sources",
+        "Description": "The AIS data displayed on this website is provided by various sources. The licenses and required attributions for each data source are listed below. Please note that the data may be subject to additional terms and conditions imposed by the respective data providers."
+      }
     }
   },
   "Metadata": {
@@ -95,7 +113,15 @@
     "Navigation": "Navigation",
     "Map": "Map",
     "Vessels": "Vessels",
-    "Ports": "Ports"
+    "VesselsOverview": "Overview",
+    "VesselsSearch": "Search",
+    "VesselsFleet": "Fleet",
+    "Ports": "Ports",
+    "PortsOverview": "Overview",
+    "PortsSearch": "Search",
+    "PortsList": "List",
+    "OpenData": "Open Data",
+    "Seaports": "Seaports"
   },
   "SeaportsPage": {
     "eyebrow": "Open data initiative",
@@ -171,6 +197,54 @@
     },
     "footer": {
       "description": "Open-source maritime data for everyone."
+    }
+  },
+  "Imprint": {
+    "title": "Legal Notice",
+    "legalBasis": "Information pursuant to Section 18 (1) MStV",
+    "contact": "Contact",
+    "email": "Email"
+  },
+  "Footer": {
+    "copyright": "© 2026 OpenShips",
+    "privacyPolicy": "Privacy Policy",
+    "imprint": "Imprint"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "description": "Information about the processing of personal data on this website.",
+    "lastUpdated": "Last updated: November 20, 2026",
+    "responsible": {
+      "title": "1. Data Controller",
+      "content": "The controller responsible for processing personal data on this website is:"
+    },
+    "hosting": {
+      "title": "2. Hosting",
+      "content": "This website is hosted on a private virtual server (VPS) provided by STRATO GmbH, Otto-Ostrowski-Straße 7, 10249 Berlin, Germany.\n\nSTRATO provides the technical infrastructure required to operate this website. As part of the hosting service, STRATO may process personal data where necessary to provide and secure the infrastructure.\n\nFurther information about STRATO's privacy practices is available at https://www.strato.de/datenschutz/.\n\nWhere required, processing by STRATO is governed by a data processing agreement pursuant to Article 28 GDPR."
+    },
+    "logs": {
+      "title": "3. Server Log Files",
+      "content": "When you access this website, the server automatically processes technical access data. This may include your IP address, date and time of access, requested URL, HTTP status code, amount of data transferred, referrer URL, and information about your browser and operating system.\n\nThis data is processed to provide the website, ensure server security and stability, and detect errors or abusive access.\n\nThe legal basis is Article 6(1)(f) GDPR. Our legitimate interest is the secure and reliable operation of the website.\n\nLog data is stored only for as long as necessary for these purposes and is subsequently deleted unless statutory retention obligations or specific security incidents require longer storage."
+    },
+    "maps": {
+      "title": "4. Interactive Map and Map Data",
+      "content": "This website provides an interactive map. The map data and tiles required for this feature are delivered by our own tile server, which runs on the same STRATO VPS as this website.\n\nWhen loading and using the map, your browser sends requests to this server. Technical connection data, in particular your IP address and information about the requested map tiles, is processed in this context.\n\nThis processing is necessary to provide the map feature you requested and to ensure its technical operation.\n\nNo external map providers are integrated for this purpose."
+    },
+    "localStorage": {
+      "title": "5. Local Storage of Settings",
+      "content": "This website uses your browser's local storage (localStorage) to save certain settings on your device.\n\nThe following information is stored:\n- your most recently used map position and zoom level;\n- your selected appearance (light or dark mode).\n\nThis information is used to restore your settings when you visit the website again. It is not transmitted to external providers.\n\nYou can delete this data at any time through your browser settings.\n\nThe storage of this information is subject to Section 25 TDDDG and the applicable data protection requirements of the GDPR."
+    },
+    "email": {
+      "title": "6. Contact by Email",
+      "content": "If you contact me by email, the information you provide, including your email address and the content of your message, will be processed to handle your request.\n\nDepending on the nature of your request, the legal basis is Article 6(1)(b) GDPR or Article 6(1)(f) GDPR.\n\nThe data will be deleted once your request has been fully handled, unless statutory retention obligations or other legitimate reasons prevent deletion."
+    },
+    "rights": {
+      "title": "7. Your Rights",
+      "content": "Subject to the applicable legal requirements, you have the following rights regarding your personal data:\n\n- Right of access under Article 15 GDPR;\n- Right to rectification under Article 16 GDPR;\n- Right to erasure under Article 17 GDPR;\n- Right to restriction of processing under Article 18 GDPR;\n- Right to data portability under Article 20 GDPR;\n- Right to object to processing under Article 21 GDPR.\n\nYou also have the right to lodge a complaint with a data protection supervisory authority."
+    },
+    "security": {
+      "title": "8. Encryption",
+      "content": "This website uses SSL/TLS encryption to protect transmitted content from access by unauthorized third parties. You can identify an encrypted connection by the use of https:// in your browser's address bar."
     }
   }
 }

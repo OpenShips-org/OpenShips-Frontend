@@ -2,17 +2,8 @@ import type { Metadata } from "next";
 import MainMap from "@/components/map/main-map";
 import "map-gl-style-switcher/dist/map-gl-style-switcher.css";
 import { getLocale, getTranslations } from "next-intl/server";
-
-const BASE_URL = "https://openships.de";
-
-const localeConfig = {
-    de: {
-        ogLocale: "de_DE",
-    },
-    en: {
-        ogLocale: "en_US",
-    },
-} as const;
+import { localeConfig } from "@/lib/locale-config";
+import { BASE_URL } from "@/config/server";
 
 export async function generateMetadata(): Promise<Metadata> {
     const t = await getTranslations("Metadata");
@@ -55,7 +46,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Page() {
     return (
-        <div className="h-dvh">
+        <div className="relative h-full min-h-0">
             <MainMap mode={{ type: "normal" }} />
         </div>
     );
